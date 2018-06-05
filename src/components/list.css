@@ -1,0 +1,70 @@
+
+#list {
+  text-align: left;
+  margin: 1em;
+}
+
+#list button:focus {
+  outline: none;
+}
+
+#list input {
+  display: inline;
+  width: 300px;
+  height: 24px;
+  font-size: 1.2em;
+}
+
+#list > button {
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 30px;
+  display: inline;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  background-color: lightgreen;
+  font-size: 1.2em;
+}
+
+#list ul {
+  list-style: none;
+  display: flex;
+  width: 300px;
+  margin: 0px;
+  padding: 0px;
+  flex-direction: column-reverse;
+}
+
+#list li {
+  border-bottom: 1px solid lightgrey;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  align-items: center;
+}
+
+#list li > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#list li > button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: red;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  border: 1px solid red;
+  border-radius: 5px;
+  max-width: 30px;
+  min-width: 30px;
+}
+
+#list li > button:hover{
+  background-color: red;
+  color: white;
+}
