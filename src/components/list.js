@@ -5,12 +5,8 @@ class List extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      listOfStrings: [
-        {index: 1, string: "hejhje"},
-        {index: 2, string: "nummer 2"},
-        {index: 3, string: "yoyoyoy"},
-      ],
-      indexCounter: 4,
+      listOfStrings: [],
+      indexCounter: 1,
       newString: "",
     }
     this.inputChange = this.inputChange.bind(this);
