@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import {shallow} from 'enzyme';
 import Counter from '../components/counter.js';
 
-
-describe('list component test suite', () => {
+describe('Counter component test suite', () => {
 	it('renders without crashing', () => {
 		const div = document.createElement('div');
 		ReactDOM.render(<Counter />, div);

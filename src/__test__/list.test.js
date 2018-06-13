@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import {shallow} from 'enzyme';
 import List from '../components/list.js';
 
-
 describe('list component test suite', () => {
 
 	it('renders without crashing', () => {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './list.css';
 
 class List extends React.Component {
@@ -43,6 +43,7 @@ class List extends React.Component {
       return <li key={obj.index}><p>{obj.string}</p><button onClick={()=>{this.removeFromList(obj.index)}}>✖</button></li>
     })
     return (<div id="list">
+      <h2>List</h2>
       <input onChange={this.inputChange} value={this.state.newString} placeholder="Add new item"/>
       <button onClick={this.addToList}>Add</button>
       <ul>{list}</ul>
