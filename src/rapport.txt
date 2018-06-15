@@ -1,0 +1,52 @@
+Har ni testat samma saker?
+Vilka är de viktigaste testfallen? Varför är de viktiga?
+Finns det några onödiga testfall i deras kod? Varför är de onödiga?
+
+
+Komponent: Redigerbar lista
+1. Vi har gjort ett ReactDOM.render-test till skillnad från den andre gruppen.
+En annan skillnad är att vi buntat ihop renderingstesterna till ett test, medan de gjort tre olika renderingstester.
+Testerna för att lägga till och ta bort items i listan har vi utfört mer eller mindre identiskt. 
+
+2.
+De viktigaste testfallen är egentligen testen för att lägga till och ta bort items i listan.
+Så som vi har lagt upp dom tester de att komponenterna renderar ordentligt.
+
+3.
+Nej. (Se sista komponenten)
+
+
+
+Komponent: Räknare
+1. Vi har gjort ett ReactDOM.render-test till skillnad från den andre gruppen.
+En skillnad är att de även här har gjort renderingstester för alla element i komponenten.
+De har också gjort ett test för att se att state sätts.
+De har gjort ett test för där inputfältet ges ett nummer, vilket vi inte gjort.
+Resterande tester är desamma.
+
+2.
+Samma sak här, det viktigaste att få med är att testa så att komponenten och dess delar renderar som de ska,
+samt att funktionerna för att påverka state fungerar som förväntat.
+
+
+3.
+Nej. (Se sista komponenten)
+
+
+Komponent: Text-Transformerare
+1. På denna komponent skiljde sig testerna något mer.
+Även här har vi gjort test för att se att komponenten inte crashar vid rendering till skillnad från den andra gruppen.
+Vi har också testat att komponenten inte upphöjer strängar till 2.
+Vi har gjort tester som kollar att bokstäverna skrivs ut som versaler till skillnad från den andra gruppen.
+De har mer utförliga renderingstester även denna gång. De har också gjort ett test som ser att nummer upphöjs i två, samt att state har ett initialt värde.
+
+2.
+Jag anser att de viktigaste är att se att komponenten renderar utan att crasha samt samt att texten skrivs ut som den ska i de olika fälten.
+Man kan såklart också ha tester för att se att input-fältet också hanterar värden rätt, men det är sekundärt då man oftast kan förutsätta det om 
+textfälten skrivs ut korrekt.
+
+3.
+Nej. Strukturen på testerna för samtliga av gruppens komponenter är densamma, de kollar först att komponenten renderar som den ska (dess olika delar),
+och sedan följer de upp med att testa funktionerna. Det man hade kunnat göra på samtliga fall är att lägga ihop vissa av testerna, till ex:
+börja med att testa att komponenten renderar utan att crasha, gå vidare med att testa funktionerna, och i samma test se så att de olika textfälten/inputfälten
+renderar som de ska. Det skulle spara några rader kod, men istället tappa lite läsbarhet.
